@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "public": false,
+  "name": "appname",
+  "env": {
+    "IS_NOW": "true"
+  },
+  "builds": [
+    {
+      "src": "client/web/next.config.js",
+      "use": "@now/next"
+    },
+    {
+      "src": "server/**/*.ts",
+      "use": "@now/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/auth(.*)",
+      "dest": "/server/auth"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/client/web/$1"
+    }
+  ]
+}

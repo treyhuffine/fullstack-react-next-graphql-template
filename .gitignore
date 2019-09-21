@@ -1,0 +1,27 @@
+# build output
+dist
+.next
+
+# Secrets
+.env
+.env.build
+
+# dependencies
+node_modules
+test/node_modules
+
+# logs & pids
+*.log
+pids
+yarn-error.log
+
+# coverage
+.nyc_output
+coverage
+
+# test output
+test/**/out
+.DS_Store
+
+# Editors
+**/.idea

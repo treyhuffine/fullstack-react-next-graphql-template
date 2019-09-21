@@ -1,0 +1,1 @@
+Using Hasura for GraphQL. For dev, `cd dev && docker-compose up -d`. You must have Docker installed on your machine.

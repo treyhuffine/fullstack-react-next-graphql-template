@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "typeRoots": ["node_modules/@types", "./types/roots"],
+    "allowJs": true,
+    "allowSyntheticDefaultImports": false,
+    "jsx": "preserve",
+    "lib": ["dom", "es2017"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es2017",
+    "baseUrl": ".",
+    "paths": {
+      "documents/*": ["./graphql/documents/*"],
+      "components/*": ["./components/*"],
+      "style/*": ["./style/*"],
+      "hooks/*": ["./hooks/*"],
+      "types/*": ["./types/*"],
+      "images/*": ["./assets/images/*"],
+      "utils/*": ["./utils/*"]
+    },
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true
+  },
+  "exclude": ["node_modules"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+}

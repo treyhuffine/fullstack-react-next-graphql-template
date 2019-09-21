@@ -1,0 +1,10 @@
+{
+  "name": "@appname/utils",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "@types/node": "^12.7.5",
+    "typescript": "^3.6.2"
+  },
+  "dependencies": {}
+}
